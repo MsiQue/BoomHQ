@@ -12,10 +12,10 @@ The following table summarizes all datasets used in our experiments:
 
 | Dataset   | Type | #Samples  | Dim  | Link                                                         |
 | --------- | ---- | --------- | ---- | ------------------------------------------------------------ |
-| Fungis    | v+s  | 295,938   | 768  | [🔗 Fungis](https://www.kaggle.com/datasets/muhammadfaizan2020/fungi-image-dataset) |
+| Fungis    | v+s  | 295,938   | 768  | [🔗 Fungis](https://hybridqueriesbenchmark.github.io/index.html) |
 | Sift      | v→s  | 1,000,000 | 128  | [🔗 SIFT1M](http://corpus-texmex.irisa.fr/)                   |
 | Glove     | v→s  | 1,183,514 | 100  | [🔗 GloVe](https://nlp.stanford.edu/projects/glove/)          |
-| Deep1B    | v→s  | 9,990,000 | 96   | [🔗 Deep1B](https://deepai.org/dataset/deep1b)                |
+| Deep1B    | v→s  | 9,990,000 | 96   | [🔗 Deep1B](https://github.com/erikbern/ann-benchmarks/tree/main) |
 | Aka_title | s→v  | 361,472   | 768  | [🔗 IMDb Aka-Title](https://datasets.imdbws.com/)             |
 | Title     | s→v  | 2,528,312 | 768  | [🔗 IMDb Title](https://datasets.imdbws.com/)                 |
 | Aka_name  | s→v  | 901,343   | 768  | [🔗 IMDb Aka-Name](https://datasets.imdbws.com/)              |
@@ -35,7 +35,7 @@ we designed a **column expansion mechanism** to generate realistic hybrid data s
   This script adds synthetic or derived scalar attributes (e.g., price, rating, category) to simulate hybrid query conditions.
 
 - **Vector Column Expansion** — implemented in [`gen_vector_column.py`](./gen_vector_column.py)  
-  This script creates additional semantic vector columns by applying embedding models (e.g., Sentence-BERT, CLIP, or GloVe) to text fields, enabling multi-vector similarity queries.
+  This script creates additional semantic vector columns by applying embedding models (e.g., BERT) to text fields, enabling multi-vector similarity queries.
 
 Together, these scripts construct the foundation of our **BoomHQ benchmark**, enabling reproducible experiments for **Multiple Hybrid Queries (MHQ)**.
 
