@@ -63,9 +63,12 @@ The resulting workload allows the evaluation of how well different vector DBMSs 
 To simulate complex real-world search scenarios, we introduce **weighted multi-vector hybrid queries**.  
 These queries involve **multiple vector columns**, each contributing to the overall similarity score:
 
+
 $$
 \text{score}(x, q) = \sum_i w_i \cdot \text{sim}(x_i, q_i)
 $$
+
+
 The script supports:
 
 - Random or rule-based weight assignment.  
