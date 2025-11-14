@@ -63,10 +63,9 @@ The resulting workload allows the evaluation of how well different vector DBMSs 
 To simulate complex real-world search scenarios, we introduce **weighted multi-vector hybrid queries**.  
 These queries involve **multiple vector columns**, each contributing to the overall similarity score:
 
-\[
+$$
 \text{score}(x, q) = \sum_i w_i \cdot \text{sim}(x_i, q_i)
-\]
-
+$$
 The script supports:
 
 - Random or rule-based weight assignment.  
@@ -87,3 +86,17 @@ It automatically recommends **execution strategies** and **search parameters** b
 git clone https://github.com/MsiQue/BoomHQ.git
 cd BoomHQ
 pip install -r requirements.txt
+
+```
+
+### 🔹 A Note Regarding Detailed Execution Procedures
+
+Thank you very much for your interest in our work. As the academic paper associated with this repository is currently **under active peer review**, we are temporarily withholding the detailed, step-by-step operational guides and reproduction scripts to ensure the integrity and fairness of the review process.
+
+We understand this may cause an inconvenience for those who wish to run and validate our method, and we sincerely apologize for this. We kindly ask for your understanding.
+
+For readers familiar with the domain (and especially for our valued reviewers) who wish to run the code, we highly recommend **referring to the "Methodology" and "Experiment" sections of our manuscript**. The paper provides the necessary details, key information, and core logic required to configure and execute the method based on its content.
+
+We are fully committed to open science and reproducibility. We pledge that **as soon as the paper is formally accepted and published**, we will immediately update this repository with all comprehensive running procedures, configuration details, example scripts, and supporting files.
+
+Thank you for your patience and support.
